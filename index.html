@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM Practice Exercise</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <header class="header">
+    <h1>
+      Ejercicios del DOM
+    </h1>
+  </header>
+  <nav class="navigation-menu translate">
+    <ul>
+      <li>
+        <a href="#section-1">
+          Reloj Digital y Alarma Sonora
+        </a>
+      </li>
+      <li>
+        <a href="#section-2">
+          Eventos del Teclado
+        </a>
+      </li>
+      <li>
+        <a href="#section-3">
+          Cuenta Regresiva
+        </a>
+      </li>
+      <li>
+        <a href="#section-4">
+          Responsive con JavaScript
+        </a>
+      </li>
+      <li>
+        <a href="#section-5">
+          Responsive Tester
+        </a>
+      </li>
+      <li>
+        <a href="#section-6">
+          Detección de la conexión
+        </a>
+      </li>
+      <li>
+        <a href="#section-7">
+          Detección de la webcam
+        </a>
+      </li>
+      <li>
+        <a href="#section-8">
+          Geolocalización
+        </a>
+      </li>
+      <li>
+        <a href="#section-9">
+          Filtros de Búsqueda
+        </a>
+      </li>
+      <li>
+        <a href="#section-10">
+          Sorteo Digital
+        </a>
+      </li>
+      <li>
+        <a href="#section-11">
+          Responsive Slider
+        </a>
+      </li>
+      <li>
+        <a href="#section-12">
+          Sección 12
+        </a>
+      </li>
+    </ul>
+  </nav>
+  <aside class="scroll-spy">
+    <div class="item-scroll-spy">
+      Reloj Digital y Alarma Sonora
+    </div>
+    <div class="item-scroll-spy">
+      Eventos del Teclado
+    </div>
+    <div class="item-scroll-spy">
+      Cuenta Regresiva
+    </div>
+    <div class="item-scroll-spy">
+      Responsive con JavaScript
+    </div>
+    <div class="item-scroll-spy">
+      Responsive Tester
+    </div>
+    <div class="item-scroll-spy">
+      Detección de la Conexión
+    </div>
+    <div class="item-scroll-spy">
+      Detección de la Webcam
+    </div>
+    <div class="item-scroll-spy">
+      Geolocalización
+    </div>
+    <div class="item-scroll-spy">
+      Filtros de Búsqueda
+    </div>
+    <div class="item-scroll-spy">
+      Sorteo Digital
+    </div>
+    <div class="item-scroll-spy">
+      Responsive Slider
+    </div>
+  </aside>
+  <aside id="online" class="online"></aside>
+  <main class="main">
+    <section id="section-1" class="section">
+      <h2>Sección 1</h2>
+      <h3>
+        Reloj Digital y Alarma Sonora
+      </h3>
+      <div class="digital-clock"></div>
+      <div class="btn-options">
+        <button id="option-1" class="btn-option">
+          Iniciar Reloj
+        </button>
+        <button id="option-2" class="btn-option">
+          Detener Reloj
+        </button>
+        <button id="option-3" class="btn-option">
+          Iniciar Alarma
+        </button>
+        <button id="option-4" class="btn-option">
+          Detener Alarma
+        </button>
+      </div>
+      <div class="alarm"></div>
+    </section>
+    <section id="section-2" class="section">
+      <h2>Sección 2</h2>
+      <h3>Eventos del Teclado</h3>
+      <div class="container-ball"></div>
+    </section>
+    <section id="section-3" class="section">
+      <h2>Sección 3</h2>
+      <h3>Countdown</h3>
+      <div class="countdown"></div>
+      <button id="reset" class="btn-option dnone">
+        Reiniciar
+      </button>
+    </section>
+    <section id="section-4" class="section">
+      <h2>Sección 4</h2>
+      <h3>Responsive con JavaScript</h3>
+      <div id="responsive" class="center"></div>
+    </section>
+    <section id="section-5" class="section">
+      <h2>Sección 5</h2>
+      <h3>Responsive Tester</h3>
+      <div>
+        <input id="url" type="text" placeholder="URL">
+        <br>
+        <input id="width" type="number" placeholder="Ancho">
+        <br>
+        <input id="height" type="number" placeholder="Alto">
+        <br>
+        <button id="open" class="btn-option">
+          Probar
+        </button>
+        <button id="close" class="btn-option">
+          Cerrar
+        </button>
+      </div>
+    </section>
+    <section id="section-6" class="section">
+      <h2>Sección 6</h2>
+      <h3>Detección de la conexión</h3>
+    </section>
+    <section id="section-7" class="section">
+      <h2>Sección 7</h2>
+      <h3>Detección de la webcam</h3>
+      <video id="webcam" src=""></video>
+    </section>
+    <section id="section-8" class="section">
+      <h2>Sección 8</h2>
+      <h3>Geolocalización</h3>
+      <p id="geolocation"></p>
+    </section>
+    <section id="section-9" class="section">
+      <h2>Sección 9</h2>
+      <h3>Filtros de Búsqueda</h3>
+      <input id="search-filter" type="text" placeholder="Buscar...">
+      <article class="cards">
+        <figure id="card-1" class="card">
+          <img src="	
+          https://source.unsplash.com/random/?movie" alt="Movie">
+          <figcaption>Movie</figcaption>
+        </figure>
+        <figure id="card-2" class="card">
+          <img src="	
+          https://source.unsplash.com/random/?videogame" alt="Game">
+          <figcaption>Game</figcaption>
+        </figure>
+        <figure id="card-3" class="card">
+          <img src="	
+          https://source.unsplash.com/random/?album" alt="Album">
+          <figcaption>Album</figcaption>
+        </figure>
+        <figure id="card-4" class="card">
+          <img src="	
+          https://source.unsplash.com/random/?book" alt="Book">
+          <figcaption>Book</figcaption>
+        </figure>
+        <figure id="card-5" class="card">
+          <img src="	
+          https://source.unsplash.com/random/?face" alt="Face">
+          <figcaption>Face</figcaption>
+        </figure>
+        <figure id="card-6" class="card">
+          <img src="	
+          https://source.unsplash.com/random/?fashion" alt="Fashion">
+          <figcaption>Fashion</figcaption>
+        </figure>
+      </article>
+    </section>
+    <section id="section-10" class="section">
+      <h2>Sección 10</h2>
+      <h3>Sorteo Digital</h3>
+      <ul id="programming-language-list">
+        <li>JavaScript</li>
+        <li>PHP</li>
+        <li>JAVA</li>
+        <li>C</li>
+        <li>Python</li>
+        <li>Ruby</li>
+        <li>Go</li>
+        <li>Visual Basic</li>
+        <li>Rust</li>
+        <li>Perl</li>
+      </ul>
+      <input type="button" value="Obtener Ganador" id="get-winner">
+    </section>
+    <section id="section-11" class="section">
+      <h2>Sección 11</h2>
+      <h3>Responsive Slider</h3>
+      <article class="responsive-slider">
+        <div class="paragraph slide opacity-0">
+          <h4>2</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, esse autem quibusdam repellat nisi consequuntur dolorum repellendus, error, ut illum voluptatibus? Repellendus, ea illum? Beatae tempore omnis quod iure dolore.
+          </p>
+        </div>
+        <img src="https://source.unsplash.com/random/800×500/?fruit" alt="Fruit" class="slide opacity-0">
+        <div class="paragraph slide opacity-0">
+          <h4>4</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, esse autem quibusdam repellat nisi consequuntur dolorum repellendus, error, ut illum voluptatibus? Repellendus, ea illum? Beatae tempore omnis quod iure dolore.
+          </p>
+        </div>
+        <img src="https://source.unsplash.com/random/800×500/?food" alt="Food" class="slide opacity-0">
+        <div class="paragraph slide opacity-0">
+          <h4>6</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, esse autem quibusdam repellat nisi consequuntur dolorum repellendus, error, ut illum voluptatibus? Repellendus, ea illum? Beatae tempore omnis quod iure dolore.
+          </p>
+        </div>
+        <img src="https://source.unsplash.com/random/800×500/?city,night" alt="City, Night" class="slide">
+        <div class="button-right-and-left position-absolute-right-0 right">
+          <i class="bi bi-chevron-double-right"></i>
+        </div>
+        <div class="button-right-and-left position-absolute-left-0 left">
+          <i class="bi bi-chevron-double-left"></i>
+        </div>
+      </article>
+    </section>
+  </main>
+  <button id="btn-menu" class="button hamburguer-menu" style="--right: 0.5rem; --bottom: 0.5rem; --z-index: 999;">
+    <div class="line-black"></div>
+    <div class="line-black"></div>
+    <div class="line-black"></div>
+  </button>
+  <button id="btn-scroll" class="button hoverDark opacity-0 scroll-up" style="--right: 3.7rem; --bottom: 0.5rem; --z-index: 0;">
+    <svg class="arrow-up" xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24">
+      <path class="arrow-up" d="M440-240v-368L296-464l-56-56 240-240 240 240-56 56-144-144v368h-80Z" />
+    </svg>
+  </button>
+  <button id="dark-light" class="button hoverDark"
+    style="--right: 80.9rem; --bottom: 0.5rem; --z-index: 0; left: 0.5rem;">
+    <svg class="moon" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+      class="bi bi-moon-fill" viewBox="0 0 16 16">
+      <path class="moon"
+        d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278" />
+    </svg>
+  </button>
+  <button class="btn-scroll-spy">
+    Scroll Spy
+  </button>
+  <script type="module" src="app.js"></script>
+</body>
+
+</html>

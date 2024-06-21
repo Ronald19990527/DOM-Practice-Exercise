@@ -1,0 +1,376 @@
+/* **********Custom Properties********* */
+:root {
+  --yellow-color: #f7da49;
+  --black-color: #000;
+  --black-alpha-color: #00000080;
+  --white-color: #fff;
+  --font-family: sans-serif;
+}
+
+/* **********Reset Styles********* */
+*,
+*:after,
+*:before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-size: 100%;
+  font-family: var(--font-family);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* **********Components********** */
+/* Ball */
+.ball {
+  width: 5vw;
+  height: 5vw;
+  background-color: var(--yellow-color);
+  border-radius: 50%;
+  position: relative;
+  top: 40%;
+  left: 45%;
+}
+
+/* Btn Option */
+.btn-option {
+  padding: 0 0.5rem;
+  cursor: pointer;
+}
+
+/* Scroll Spy Button */
+.btn-scroll-spy {
+  width: 8rem;
+  height: 4rem;
+  background-color: var(--yellow-color);
+  font-size: 1rem;
+  font-weight: bold;
+  position: fixed;
+  top: 10rem;
+  left: 5rem;
+  border-radius: 50%;
+  border: none;
+  cursor: pointer;
+  display: none;
+  transition: all 0.3s ease-out;
+}
+
+@media (min-width: 64rem) {
+  .btn-scroll-spy {
+    display: block;
+  }
+}
+
+.btn-scroll-spy:hover {
+  opacity: 0.8;
+}
+
+/* Button */
+.button {
+  background-color: var(--yellow-color);
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  position: fixed;
+  right: var(--right);
+  bottom: var(--bottom);
+  z-index: var(--z-index);
+  cursor: pointer;
+  transition: all 0.5s ease-out;
+}
+
+@media (min-width: 64rem) {
+  .button.hamburguer-menu {
+    display: none;
+  }
+
+  .button.scroll-up {
+    left: var(--right);
+  }
+}
+
+.button > .line-black {
+  width: 2rem;
+  height: 0.2rem;
+  background-color: var(--black-color);
+  border-radius: 0.5rem;
+  margin: 0 auto;
+  transition: all 0.5s ease-out;
+}
+
+.button > .line-black:first-child,
+.button > .line-black:last-child {
+  position: relative;
+}
+
+.button > .line-black:first-child.rotate-45-deg-positive {
+  transform: rotate(45deg);
+  top: 0.1rem;
+}
+
+.button > .line-black:last-child.rotate-45-deg-negative {
+  transform: rotate(-45deg);
+  top: -0.1rem;
+}
+
+.button > .line-black:nth-child(2) {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
+.button > .line-black:nth-child(2).none {
+  display: none;
+}
+
+/* Button Right and Left */
+.button-right-and-left {
+  background-color: var(--white-color);
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  border: thin solid var(--black-color);
+}
+
+/* Cards */
+.card {
+  display: inline-block;
+  margin: 0 2rem 2rem 2rem;
+}
+
+.card img {
+  width: 11rem;
+  height: 12rem;
+}
+
+.card figcaption {
+  color: var(--yellow-color);
+  background-color: var(--black-color);
+  padding: 1rem;
+}
+
+/* Container Ball */
+.container-ball {
+  max-width: 75rem;
+  height: 50vh;
+  background-color: var(--black-color);
+  margin: 0 auto;
+  cursor: pointer;
+}
+
+/* Countdown */
+.countdown {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Digital Clock */
+.digital-clock {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+/* Header */
+.header {
+  background-color: var(--yellow-color);
+  text-align: center;
+  padding: 1rem 0;
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 2;
+}
+
+/* Navigation Menu */
+.navigation-menu {
+  font-weight: 500;
+  font-size: 1.5rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: fixed;
+  left: 0;
+  top: 0;
+  z-index: 4;
+  width: 100vw;
+  height: 100vh;
+  overflow-y: scroll;
+  background-color: var(--black-alpha-color);
+  transform: translateX(0%);
+  transition: all 0.5s ease-out;
+}
+
+.navigation-menu.translate {
+  transform: translateX(-100%);
+}
+
+.navigation-menu > ul > li {
+  list-style-type: none;
+}
+
+.navigation-menu > ul > li > a:hover {
+  color: var(--black-color);
+  background-color: var(--yellow-color);
+  font-weight: bold;
+}
+
+.navigation-menu > ul > li > a {
+  color: var(--yellow-color);
+  display: block;
+  padding: 2rem 0;
+  width: 100%;
+  transition: all 0.3s ease-out;
+}
+
+/* Warning Online */
+.online {
+  color: var(--white-color);
+  text-align: center;
+  position: absolute;
+  z-index: 3;
+  width: 100%;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  transform: translateY(-8.3rem);
+  transition: transform 0.3s ease-out;
+}
+
+.online.show-online {
+  transform: translateY(-4.4rem);
+}
+
+/* Responsive Slider */
+.responsive-slider {
+  max-width: 50rem;
+  height: 31.25rem;
+  position: relative;
+  margin: 0 auto;
+}
+
+.responsive-slider > img {
+  width: 100%;
+  height: 31.25rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-out;
+  object-fit: cover;
+}
+
+.responsive-slider > .paragraph {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s ease-out;
+}
+
+/* Scroll Spy */
+.scroll-spy {
+  color: var(--yellow-color);
+  background-color: var(--black-color);
+  height: 89.3vh;
+  text-align: end;
+  position: fixed;
+  top: 4.375rem;
+  right: -16.58rem;
+  display: none;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-spy.show-scroll-spy {
+  right: 0;
+}
+
+.scroll-spy > .item-scroll-spy {
+  padding: 0.5rem 1rem;
+}
+
+@media (min-width: 64rem) {
+  .scroll-spy {
+    display: block;
+  }
+}
+
+/* **********Utilities********** */
+.center {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.dark {
+  color: var(--yellow-color);
+  background-color: var(--black-color);
+}
+
+.dnone {
+  display: none;
+}
+
+.hoverDark:hover {
+  background-color: var(--black-color);
+}
+
+.hoverDark:hover > svg {
+  fill: var(--yellow-color);
+  cursor: pointer;
+}
+
+.inline-block {
+  display: inline;
+}
+
+.opacity-0 {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.position-absolute-right-0 {
+  position: absolute;
+  top: 13.5rem;
+  right: 0;
+}
+
+.position-absolute-left-0 {
+  position: absolute;
+  top: 13.5rem;
+  left: 0;
+}
+
+.section {
+  text-align: center;
+  min-height: 100vh;
+}
+
+.underline {
+  text-decoration: underline;
+}
+
+/* **********Own Styles********* */
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.responsive-slider h4 {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.section > * {
+  margin-bottom: 2rem;
+}
+
+.section > h2 {
+  margin-top: 5.3125rem;
+}
