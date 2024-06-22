@@ -284,6 +284,7 @@ html {
   position: fixed;
   top: 4.375rem;
   right: -16.58rem;
+  z-index: 100;
   display: none;
   transition: all 0.3s ease-out;
 }
@@ -294,6 +295,12 @@ html {
 
 .scroll-spy > .item-scroll-spy {
   padding: 0.5rem 1rem;
+  transition: all 0.3s ease-out;
+}
+
+.scroll-spy > .item-scroll-spy.item-active {
+  color: var(--black-color);
+  background-color: var(--yellow-color);
 }
 
 @media (min-width: 64rem) {
