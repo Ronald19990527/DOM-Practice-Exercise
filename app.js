@@ -32,6 +32,14 @@ import showAndNoShowScrollSpy from "./show-and-no-show-scroll-spy.js";
 
 import scrollSpy from "./scroll-spy.js";
 
+import smartVideo from "./smart-video.js";
+
+import form from "./form.js";
+
+import voiceReader from "./voice-reader.js";
+
+import detectionDevices from "./detection-devices.js";
+
 ((d) => {
   const $navigationMenu = d.querySelector(".navigation-menu"),
   $lineBlackFirstChild = d.querySelector(".button > .line-black:first-child"),
@@ -66,6 +74,14 @@ import scrollSpy from "./scroll-spy.js";
   scrollSpy(".section");
 
   showAndNoShowScrollSpy("scroll-spy", "btn-scroll-spy");
+
+  smartVideo("section-12");
+
+  form(".form > .input:not(:nth-of-type(3))", ".alert");
+
+  voiceReader();
+
+  detectionDevices(".user-agent-info");
 
   d.querySelector(".container-ball").innerHTML = `<div class="ball" style="position: relative; top: 40%; left: 45%;"></div>`;
 

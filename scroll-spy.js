@@ -23,9 +23,8 @@ export default function scrollSpy(section) {
 
     function intersectionCallback(entries) {
         const $itemsScrollSpy = document.querySelectorAll(".item-scroll-spy");
-        entries.forEach((entry) => {
-            console.log(entry.target.classList[1]);
 
+        entries.forEach((entry) => {
             $itemsScrollSpy.forEach(element => {
                 if (element.classList.contains(entry.target.classList[1]) && !element.classList.contains("item-active")) element.classList.add("item-active");
                 else element.classList.remove("item-active");

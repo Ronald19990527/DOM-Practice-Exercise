@@ -74,44 +74,101 @@
       </li>
       <li>
         <a href="#section-12">
-          Sección 12
+          Video Inteligente
+        </a>
+      </li>
+      <li>
+        <a href="#section-13">
+          Formulario de Contacto(Validaciones)
+        </a>
+      </li>
+      <li>
+        <a href="#section-14">
+          Narrador
+        </a>
+      </li>
+      <li>
+        <a href="#section-15">
+          Detección de Dispositivos (User Agent)
         </a>
       </li>
     </ul>
   </nav>
   <aside class="scroll-spy">
     <div class="item-scroll-spy 1">
-      Reloj Digital y Alarma Sonora
+      <a href="#section-1">
+        Reloj Digital y Alarma Sonora
+      </a>
     </div>
     <div class="item-scroll-spy 2">
-      Eventos del Teclado
+      <a href="#section-2">
+        Eventos del Teclado
+      </a>
     </div>
     <div class="item-scroll-spy 3">
-      Cuenta Regresiva
+      <a href="#section-3">
+        Cuenta Regresiva
+      </a>
     </div>
     <div class="item-scroll-spy 4">
-      Responsive con JavaScript
+      <a href="#section-4">
+        Responsive con JavaScript
+      </a>
     </div>
     <div class="item-scroll-spy 5">
-      Responsive Tester
+      <a href="#section-5">
+        Responsive Tester
+      </a>
     </div>
     <div class="item-scroll-spy 6">
-      Detección de la Conexión
+      <a href="#section-6">
+        Detección de la conexión
+      </a>
     </div>
     <div class="item-scroll-spy 7">
-      Detección de la Webcam
+      <a href="#section-7">
+        Detección de la webcam
+      </a>
     </div>
     <div class="item-scroll-spy 8">
-      Geolocalización
+      <a href="#section-8">
+        Geolocalización
+      </a>
     </div>
     <div class="item-scroll-spy 9">
-      Filtros de Búsqueda
+      <a href="#section-9">
+        Filtros de Búsqueda
+      </a>
     </div>
     <div class="item-scroll-spy 10">
-      Sorteo Digital
+      <a href="#section-10">
+        Sorteo Digital
+      </a>
     </div>
     <div class="item-scroll-spy 11">
-      Responsive Slider
+      <a href="#section-11">
+        Responsive Slider
+      </a>
+    </div>
+    <div class="item-scroll-spy 12">
+      <a href="#section-12">
+        Video Inteligente
+      </a>
+    </div>
+    <div class="item-scroll-spy 13">
+      <a href="#section-13">
+        Formulario de<br>Contacto(Validaciones)
+      </a>
+    </div>
+    <div class="item-scroll-spy 14">
+      <a href="#section-14">
+        Narrador
+      </a>
+    </div>
+    <div class="item-scroll-spy 15">
+      <a href="#section-15">
+        Detección de Dispositivos<br>(User Agent)
+      </a>
     </div>
   </aside>
   <aside id="online" class="online"></aside>
@@ -274,6 +331,50 @@
           <i class="bi bi-chevron-double-left"></i>
         </div>
       </article>
+    </section>
+    <section id="section-12" class="section 12">
+      <h2>Sección 12</h2>
+      <h3>Video Inteligente</h3>
+      <video src="/assets/Vídeo-1-11-a-las-13.27.mp4" controls width="80%" height="500" preload class="smart-video"></video>
+    </section>
+    <section id="section-13" class="section 13">
+      <h2>Sección 13</h2>
+      <h3>Formulario de Contacto (Validaciones)<br><br>Envianos tus comentarios</h3>
+      <form action="https://formsubmit.co/ronaldhernandezdp@unimagdalena.edu.co" method="POST" target="_blank" class="form">
+        <input type="text" name="nombre" placeholder="Escribe tu nombre" required pattern="^[A-Za-zÑñÁáÉéÍíÓóÚúÜü\s]+$" title="Ingrese un nombre valido" class="input">
+        <div class="alert alert-hidden">
+          <p>Ingrese un nombre valido</p>
+        </div>
+        <input type="email" name="correo" placeholder="Escribe tu email" required required pattern="^[^@\s]+@[^@\s]+\.[^@\s]+$" title="Ingrese un correo valido" class="input">
+        <div class="alert alert-hidden">
+          <p>Ingrese un correo valido</p>
+        </div>
+        <input type="text" name="asunto" placeholder="Asunto a tratar" required class="input">
+        <textarea name="comentarios" placeholder="Escribe tus comentarios" required pattern="^.{1,255}$" class="input"></textarea>
+        <div class="alert alert-hidden">
+          <p>Los comentarios no deben exceder los 255 caracteres</p>
+        </div>
+        <input type="submit" value="Enviar" class="submit" disabled>
+      </form>
+      <div class="modal-loader dnone">
+        <img src="assets/spinning-circles.svg" alt="Loader">
+      </div>
+      <div class="sent-successfully-message dnone">
+        <p>Los datos fueron enviados con exito</p>
+      </div>
+    </section>
+    <section id="section-14" class="section 14">
+      <h2>Sección 14</h2>
+      <h3>Narrador</h3>
+      <div class="voice-reader-information">
+        <select class="voices"></select>
+        <textarea placeholder="Ingresa un texto para leerlo..." class="text-to-read"></textarea>
+        <button class="read-text">Leer Texto</button>
+      </div>
+    </section>
+    <section id="section-15" class="section 15">
+      <h2>Detección de Dispositivos<br>(User Agent)</h2>
+      <div class="user-agent-info"></div>
     </section>
   </main>
   <button id="btn-menu" class="button hamburguer-menu" style="--right: 0.5rem; --bottom: 0.5rem; --z-index: 999;">

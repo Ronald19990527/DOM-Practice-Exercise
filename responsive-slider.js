@@ -3,8 +3,6 @@ var slides = 0;
 export default function responsiveSlider(slide) {
     const $slide = document.querySelectorAll(slide);
 
-    console.log($slide);
-
     slides = $slide.length - 1;
 
     document.addEventListener("click", e => {

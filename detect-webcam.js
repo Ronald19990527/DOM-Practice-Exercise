@@ -6,7 +6,6 @@ export default function detectWebcam(webcam) {
     }
     navigator.mediaDevices.getUserMedia({video: true, audio: false})
     .then((stream) => {
-        console.log(stream);
         $webcam.srcObject = stream;
         $webcam.play();
     }).catch((err) => {
