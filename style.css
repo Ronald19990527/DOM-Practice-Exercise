@@ -423,7 +423,7 @@ html {
 /* **********Own Styles********* */
 .form > input[type="submit"] {
   font-weight: bold;
-  width: 26rem;
+  width: 40%;
   margin-top: 1rem;
   padding: 0.5rem;
   cursor: pointer;
